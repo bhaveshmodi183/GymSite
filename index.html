@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiteness Club</title>
+    <link rel="stylesheet" href="" class="CSS/style.css">
+    <style>
+        /* css reset  */
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/Back3.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 120px;
+            font-size: medium;
+            filter: invert(100%);
+        }
+
+        .left div {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 45%;
+            margin: 20px auto;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 20px;
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 35px 25px;
+        }
+
+        .navbar li a:hover,
+        a:active {
+            text-decoration: underline;
+            color: rgb(233, 186, 116);
+        }
+
+        .btn {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(102, 76, 41);
+        }
+
+        .container {
+            position: absolute;
+            left: 60%;
+            margin: 106px 80px;
+            padding: 75px;
+            width: 30%;
+            border-radius: 10px;
+
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 250px;
+            padding: 1px;
+            margin: 10px auto;
+            border: 2px solid black;
+            font-size: 20px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            font-size: 20px;
+            display: block;
+            width: 66%;
+            border-radius: 10px;
+            margin: 5px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/dumble">
+            <div>BM FITNESS</div>
+        </div>
+        <!-- mid for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fitness tips</a></li>
+                <li><a href="#">Rules</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Email us</button>
+            <button class="btn">Contact</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter you name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
